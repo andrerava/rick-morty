@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: hsla(300, 80%, 31%, 0.925);
+  margin: 0;
+  height: 100vh;
+}
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+  background-image: url('/sfondoHome1.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.image-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-header img {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.button-container {
+  margin-top: 150px;
+}
+
+.button-container a {
+  display: inline-block;
+  position: relative;
+  width: 500px;
+  height: 250px;
+  margin: 10px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border-width: 5px;
+  border-color: hsl(93, 79%, 62%);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(250, 248, 250);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.button-back-link {
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+.button-back-link:hover {
+  background-color: hsla(300, 80%, 31%, 0.925);
+}
+
+.button-container .button-text {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); 
+  color: black;
+  transition: background 0.3s ease;
+}
+
+.button-container a:hover .button-text {
+  background: rgba(69, 222, 236, 0.7);
+}
+
+.button-prefe{
+  text-align: center;
+          padding: 20px 0;
+          width: 500px;
+  height: 250px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-prefe{
+  justify-content: center;
+}
+
+.button-favourite .favourite {
+  
+  text-decoration: none;
+          color: rgb(10, 11, 11);
+          background-color: rgb(88, 238, 68);
+          padding: 10px 20px;
+          border-radius: 4px;
+          font-size: 16px;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+          border-color: aqua;
+          border-width: 3px;
+}
+
+.button-luoghi {
+  background-image: url('/luogo.jpg');
+}
+
+.button-episodi {
+  background-image: url('/episodi.jpg');
+}
+
+.button-personaggi {
+  background-image: url('/character.png');
+}
